@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 *{
   box-sizing: border-box;
 }
 
 body{ 
-  font-family: 'JetBrains mono', sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -13,19 +14,20 @@ body{
   min-height: 100vh;
   margin: 0;
 
-  background: #242424;
+  /* background: #242424; */
+  background-image: url('./iland.jpg');
   color: white;
 }
 
 h1{
   font-weight: normal;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   margin-top: 4.5rem;
   text-align: center;
 }
 
 h2{
-  color: #242424;
+  color: transparent;
   text-align: center;
 }
 
@@ -62,20 +64,29 @@ label{
 }
 
 input{
-  background-color: #0080ff;
-  color: #FFF;
+  background-color: #FFF;
+  color: black;
 
   padding: 15px;
   font-size: 18px;
   border: none;
   outline: none;
   border-radius: 5px;
+
+  font-family: 'Poppins';
 }
 
 ::-webkit-calendar-picker-indicator{
-  background-color: #FFF;
+
   padding: 5px;
   cursor: pointer;
   border-radius: 3px;
+
+  background-color: transparent;
+
+
 }
 
+::-webkit-calendar-picker-indicator::after{
+  background-color: transparent;
+}

@@ -3,6 +3,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 
+
 var novoAno = "";
 var invalidDate = "";
 const data_escolhida = document.getElementById('date');
@@ -31,8 +32,8 @@ const countdown = () => {
       minsEl.innerText = '0';
       secondsEl.innerText = '0';
     }else{
+      mensagemInvalida.style.color = "transparent";
 
-      mensagemInvalida.style.color = "#242424";
       const days = Math.floor(totalSeconds / 3600 / 24);
       const hours = (Math.floor(totalSeconds / 3600) % 24) + 3;
       const mins = Math.floor(totalSeconds / 60) % 60;
